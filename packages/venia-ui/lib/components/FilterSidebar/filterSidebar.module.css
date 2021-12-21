@@ -1,50 +1,54 @@
 .root {
     --borderColor: var(--venia-global-color-border);
+
+    composes: bottom-0 from global;
+    composes: hidden from global;
+    composes: max-w-modal from global;
+    composes: w-full from global;
+    composes: z-menu from global;
     background-color: white;
-    bottom: 0;
-    display: none;
     grid-template-rows: 1fr 7rem;
-    max-width: 360px;
-    width: 100%;
-    z-index: 3;
+
+    composes: lg_grid from global;
 }
 
 .body {
-    overflow: auto;
+    composes: overflow-auto from global;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.25rem 1.25rem 0;
+    composes: flex from global;
+    composes: justify-between from global;
+    composes: pb-0 from global;
+    composes: pt-5 from global;
+    composes: px-5 from global;
 }
 
 .headerTitle {
-    display: flex;
-    align-items: center;
+    composes: flex from global;
+    composes: items-center from global;
+    composes: leading-none from global;
     font-size: var(--venia-global-typography-heading-L-fontSize);
-    line-height: 0.875rem;
 }
 
 .action {
-    padding: 1rem 1.25rem 0;
+    composes: pb-0 from global;
+    composes: pt-xs from global;
+    composes: px-xs from global;
 }
 
+/* TODO @TW: cannot compose */
 .action button {
     font-size: var(--venia-typography-body-S-fontSize);
     text-decoration: none;
 }
 
 .blocks {
-    padding: 1rem 1.25rem 0;
+    composes: pb-0 from global;
+    composes: pt-xs from global;
+    composes: px-xs from global;
 }
 
 .blocks > li:last-child {
     border-bottom: 2px solid rgb(var(--borderColor));
-}
-
-@media (min-width: 1024px) {
-    .root {
-        display: grid;
-    }
 }

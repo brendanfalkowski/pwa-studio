@@ -1,20 +1,20 @@
 .root {
     composes: h-auto from global;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    composes: mt-xs from global;
+    composes: ml-xs from global;
     font-size: 0.875rem;
 
     /* Permanent height to prevent pop-in. */
-    height: 0.875rem;
+    composes: h-[0.875rem] from global;
 
     /* Show ellipses when overflowing. */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    composes: overflow-hidden from global;
+    composes: overflow-ellipsis from global;
+    composes: whitespace-nowrap from global;
 }
 
 .text {
-    padding: 0.25rem;
+    composes: p-1 from global;
 }
 
 .divider {
@@ -23,7 +23,7 @@
 
 .link {
     composes: text;
-    text-decoration: underline;
+    composes: underline from global;
 }
 
 .currentCategory {

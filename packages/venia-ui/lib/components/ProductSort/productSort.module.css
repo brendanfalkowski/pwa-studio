@@ -1,23 +1,25 @@
 .root {
-    position: relative;
-    margin-left: 0.5rem;
+    composes: relative from global;
+    composes: ml-2xs from global;
 }
 
 .menu {
-    position: absolute;
-    z-index: 2;
-    top: 110%;
-    right: 0;
-    min-width: 10rem;
-    margin: 0.125rem 0 0;
+    composes: absolute from global;
+    composes: mb-0 from global;
+    composes: min-w-[10rem] from global;
+    composes: mt-0.5 from global;
+    composes: mx-0 from global;
+    composes: right-0 from global;
+    composes: rounded from global;
+    composes: text-left from global;
+    composes: top-[110%] from global;
+    composes: z-menu from global;
     font-size: 1rem;
     color: black;
-    text-align: left;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgb(var(--venia-global-color-gray-dark));
-    border-radius: 0.25rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -25,6 +27,7 @@
     border-bottom: 1px solid rgb(var(--venia-global-color-gray-dark));
 }
 
+/* TODO @TW: cannot compose */
 .menuItem:last-child {
     border-bottom: none;
 }
@@ -35,42 +38,44 @@
 
 .sortButton {
     composes: root_lowPriority from '../../components/Button/button.module.css';
-    min-width: 6.25rem;
+
+    composes: min-w-[6.26rem] from global;
+
+    composes: lg_border-2 from global;
+    composes: lg_font-normal from global;
+    composes: lg_normal-case from global;
+    composes: lg_rounded-md from global;
+}
+
+@media (min-width: 960px) {
+    .sortButton {
+        border-color: rgb(var(--venia-global-color-gray-500));
+    }
 }
 
 .desktopText {
-    display: none;
+    composes: hidden from global;
+
+    composes: lg_inline-flex from global;
 }
 
 .sortText {
-    line-height: 24px;
+    composes: leading-normal from global;
     font-size: var(--venia-global-fontSize-200);
 }
 
 .desktopIconWrapper {
     composes: root from '../Icon/icon.module.css';
+
     transform: translateX(10px);
 }
 
 .desktopIcon {
     composes: icon from '../Icon/icon.module.css';
+
     stroke: rgb(var(--venia-global-color-gray-500));
 }
 
-@media (min-width: 1024px) {
-    .sortButton {
-        border-width: 2px;
-        border-color: rgb(var(--venia-global-color-gray-500));
-        border-radius: 6px;
-        font-weight: var(--venia-global-fontWeight-normal);
-        text-transform: none;
-    }
-
-    .mobileText {
-        display: none;
-    }
-
-    .desktopText {
-        display: inline-flex;
-    }
+.mobileText {
+    composes: lg_hidden from global;
 }

@@ -1,24 +1,26 @@
 .root {
     border-bottom: 1px solid rgb(var(--venia-global-color-border));
-    margin: 0 1.5rem;
-    padding: 1.75rem 0;
+    composes: mx-sm from global;
+    composes: my-0 from global;
+    composes: px-0 from global;
+    composes: py-sm from global;
 }
 
 .title {
     font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    display: block;
+    composes: block from global;
+    composes: font-semibold from global;
+    composes: leading-normal from global;
+    composes: mb-sm from global;
 }
 
 .selection {
     font-size: 1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-    display: flex;
+    composes: leading-normal from global;
+    composes: mt-xs from global;
+    composes: flex from global;
 }
 
 .selectionLabel {
-    margin-right: 1rem;
+    composes: mr-xs from global;
 }

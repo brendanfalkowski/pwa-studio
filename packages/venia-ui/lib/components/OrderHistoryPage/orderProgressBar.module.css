@@ -1,7 +1,7 @@
 .root {
-    column-gap: 0.25rem;
-    display: grid;
-    grid-auto-flow: column;
+    composes: gap-x-1 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
     grid-auto-rows: 6px;
 }
 

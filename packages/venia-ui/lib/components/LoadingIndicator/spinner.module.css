@@ -1,24 +1,25 @@
 .root {
     animation: spin 1920ms linear infinite;
     grid-area: primary;
+
+    composes: sm_justify-self-start from global;
+    composes: sm_ml-2xs from global;
 }
 
-.indicator {
-    --stroke: rgb(var(--venia-global-color-text-hint));
-}
-
-@media (min-width: 641px) {
+@media (min-width: 640px) {
     .root {
-        justify-self: start;
-        margin-left: 0.5rem;
         grid-area: secondary;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
     .root {
         grid-column: 2 / 3;
     }
+}
+
+.indicator {
+    --stroke: rgb(var(--venia-global-color-text-hint));
 }
 
 @keyframes spin {

@@ -1,34 +1,34 @@
 .root {
-    align-items: center;
+    composes: gap-3 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-items-center from global;
+    composes: leading-normal from global;
+    composes: m-0 from global;
     color: rgb(var(--venia-global-color-gray-900));
-    display: grid;
-    gap: 0.75rem;
-    grid-auto-flow: column;
     grid-template-areas: 'input label';
     grid-template-columns: min-content 1fr;
-    margin: 0;
-    justify-items: center;
-    line-height: 1.5rem;
 }
 
 .input {
-    -webkit-appearance: none;
+    composes: h-[1.5rem] from global;
+    composes: m-0 from global;
+    composes: rounded-full from global;
+    composes: w-[1.5rem] from global;
+    composes: z-surface from global;
     background: none;
     background-clip: content-box;
     border: 7px solid transparent;
-    border-radius: 50%;
     grid-area: input;
-    height: 1.5rem;
-    margin: 0;
-    width: 1.5rem;
-    z-index: 2;
+    -webkit-appearance: none;
 }
 
 .icon {
+    composes: h-[1.5rem] from global;
+    composes: w-[1.5rem] from global;
+    composes: z-foreground from global;
     grid-area: input;
-    height: 1.5rem;
-    width: 1.5rem;
-    z-index: 1;
 }
 
 .icon svg {
@@ -38,7 +38,7 @@
 .label {
     font-size: var(--venia-typography-body-S-fontSize);
     grid-area: label;
-    justify-self: start;
+    composes: justify-self-start from global;
 }
 
 .input:checked {
@@ -49,6 +49,7 @@
     stroke: rgb(var(--venia-brand-color-1-700));
 }
 
+/* TODO @TW: cannot compose */
 .input:active,
 .input:focus {
     box-shadow: -3px 3px rgb(var(--venia-brand-color-1-100));

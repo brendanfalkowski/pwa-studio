@@ -1,20 +1,25 @@
 .root {
     composes: root from '../clickable.module.css';
+
+    composes: h-[3rem] from global;
+    composes: min-w-[3rem] from global;
+    composes: px-2xs from global;
+    composes: py-0 from global;
+    composes: rounded-sm from global;
     border: 1px solid rgb(var(--venia-global-color-text));
-    border-radius: 2px;
-    height: 3rem;
-    min-width: 3rem;
-    padding: 0 0.5rem;
 }
 
 .root_selected {
     composes: root;
+
     background-color: rgb(var(--venia-global-color-text));
     color: white;
 }
+
 .root_focused {
     composes: root;
 }
+
 .root_selected_focused {
     composes: root_selected;
 }

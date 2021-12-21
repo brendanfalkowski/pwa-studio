@@ -26,7 +26,21 @@ const config = {
     },
     // Set the character Tailwind uses when prefixing classnames with variants.
     // CSS Modules doesn't like Tailwind's default `:`, so we use `_`.
-    separator: '_'
+    separator: '_',
+    theme: {
+        screens: {
+            'xs': '480px',
+            'sm': '640px',
+            'md': '800px',
+            'lg': '960px',
+            'dreamOfNineties': '1024px', // TODO @TW: Need to resolve in scale
+            'xl': '1120px',
+            '2xl': '1280px',
+            '3xl': '1440px',
+            '4xl': '1600px',
+            'max': '1920px'
+        },
+    }
 };
 
 module.exports = config;

@@ -1,15 +1,16 @@
 .root {
-    align-items: center;
+    composes: items-center from global;
     border: 1px none currentColor;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
+    composes: rounded-sm from global;
+    composes: flex from global;
+    composes: justify-center from global;
     min-height: 2rem;
-    outline: none;
-    position: relative;
+    composes: outline-none from global;
+    composes: relative from global;
 }
 
 .root_active {
     composes: root;
-    border-style: solid;
+
+    composes: border-solid from global;
 }

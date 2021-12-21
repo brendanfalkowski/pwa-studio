@@ -1,14 +1,14 @@
 .root {
-    display: grid;
+    composes: grid from global;
 }
 
 .row {
-    align-items: center;
-    display: grid;
-    gap: 2rem;
+    composes: gap-md from global;
+    composes: grid from global;
+    composes: items-center from global;
+    composes: p-xs from global;
+    composes: text-left from global;
     grid-template-columns: auto 1fr auto;
-    padding: 1rem;
-    text-align: left;
 }
 
 .rowButton:nth-child(even) {

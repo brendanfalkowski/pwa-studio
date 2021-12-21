@@ -1,17 +1,17 @@
 .root {
-    display: grid;
-    grid-auto-flow: row;
-    justify-content: stretch;
-    row-gap: 1.5rem;
-    padding: 1.5rem;
+    composes: gap-y-sm from global;
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: justify-stretch from global;
+    composes: p-sm from global;
 }
 
 .link {
     composes: root from '../LinkButton/linkButton.module.css';
 
+    composes: justify-start from global;
+    composes: no-underline from global;
     color: rgb(var(--venia-global-color-gray-700));
-    justify-content: start;
-    text-decoration: none;
 }
 
 .link:hover {
@@ -21,6 +21,6 @@
 .signOut {
     composes: link;
 
+    composes: pt-xs from global;
     border-top: 2px solid rgb(var(--venia-global-color-gray));
-    padding-top: 1rem;
 }

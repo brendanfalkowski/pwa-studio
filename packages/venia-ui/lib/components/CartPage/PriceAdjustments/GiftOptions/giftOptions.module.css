@@ -2,5 +2,6 @@
 }
 
 .option {
-    padding: 0.5rem 0rem;
+    composes: px-0 from global;
+    composes: py-2xs from global;
 }

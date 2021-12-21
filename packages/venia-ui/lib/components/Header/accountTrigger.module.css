@@ -1,8 +1,11 @@
 .root {
-    align-items: center;
-    display: grid;
+    composes: grid from global;
+    composes: hidden from global;
+    composes: items-center from global;
     /* The full height of the site header minus (box shadow height * 2). */
     height: calc(5rem - 8px);
+
+    composes: sm_block from global;
 }
 
 .root_open {
@@ -14,13 +17,7 @@
 .trigger {
     composes: root from '../clickable.module.css';
 
-    height: 3rem;
-    min-width: 6rem;
-    z-index: 1;
-}
-
-@media (max-width: 640px) {
-    .root {
-        display: none;
-    }
+    composes: h-[3rem] from global;
+    composes: min-w-[6rem] from global;
+    composes: z-foreground from global;
 }

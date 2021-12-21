@@ -1,16 +1,12 @@
 .root {
+    composes: pb-xs from global;
+    composes: text-center from global;
     color: rgb(var(--venia-global-color-gray-700));
-    text-align: center;
     font-size: var(--venia-global-fontSize-100);
-    padding-bottom: 1rem;
+
+    composes: lg_hidden from global;
 }
 
 .sortText {
-    font-weight: var(--venia-global-fontWeight-semibold);
-}
-
-@media (min-width: 1024px) {
-    .root {
-        display: none;
-    }
+    composes: font-semibold from global;
 }

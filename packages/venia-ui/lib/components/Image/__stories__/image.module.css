@@ -1,9 +1,9 @@
 .root {
+    composes: rounded-sm from global;
+    composes: w-full from global;
     background-color: rgb(var(--venia-global-color-gray));
-    border-radius: 2px;
-    width: 100%;
 }
 
 .container {
-    width: 400px;
+    composes: w-[400px] from global;
 }

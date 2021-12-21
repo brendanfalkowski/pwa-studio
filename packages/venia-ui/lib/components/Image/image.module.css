@@ -6,7 +6,7 @@
 }
 
 .container {
-    position: relative;
+    composes: relative from global;
 }
 
 .image {
@@ -17,22 +17,22 @@
 }
 
 .loaded {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: visible;
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
+    composes: visible from global;
 }
 
 .notLoaded {
     composes: loaded;
-    visibility: hidden;
+    composes: invisible from global;;
 }
 
 .placeholder {
     background-color: rgb(var(--venia-global-color-gray));
-    position: relative;
-    top: 0;
-    left: 0;
+    composes: relative from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
 }
 
 .placeholder_layoutOnly {
