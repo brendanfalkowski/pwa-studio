@@ -4,16 +4,16 @@
 }
 
 .errorText {
-    color: rgb(var(--venia-global-color-error));
     composes: leading-normal from global;
+    composes: text-error from global;
 }
 
 .balance {
-    font-size: 0.875rem;
     composes: grid from global;
     composes: italic from global;
     composes: items-start from global;
     composes: pt-1.5 from global;
+    composes: text-sm from global;
     grid-template-columns: max-content 1fr;
 }
 
@@ -41,16 +41,21 @@
 .card_input_container {
 }
 
+/* TODO @TW: cannot compose */
 .card_input_container_error input {
+    /* composes: border-error from global; */
     border-color: rgb(var(--venia-global-color-red-400));
 }
 
+/* TODO @TW: cannot compose */
 .card_input_container_error input:focus {
+    /* composes: border-gray-600 from global; */
     border-color: rgb(var(--venia-global-color-gray-600));
 }
 
 /* TODO @TW: cannot compose */
 .card_input_container_error p {
+    /* composes: text-error from global; */
     color: rgb(var(--venia-global-color-error));
     /* composes: font-semibold from global; */
     font-weight: 600;

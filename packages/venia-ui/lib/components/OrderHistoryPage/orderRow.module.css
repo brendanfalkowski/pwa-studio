@@ -1,8 +1,10 @@
 .root {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: grid from global;
     composes: grid-cols-2 from global;
     composes: rounded-md from global;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
 }
 
 @media (min-width: 960px) {
@@ -12,9 +14,14 @@
 }
 
 .cell {
+    composes: border-2 from global;
+    composes: border-l-0 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: overflow-hidden from global;
     composes: p-sm from global;
-    border-left: 2px solid rgb(var(--venia-global-color-gray));
+
+    composes: lg_border-left-2 from global;
 }
 
 .stackedCell {
@@ -24,7 +31,7 @@
 }
 
 .label {
-    font-size: var(--venia-typography-body-XS-fontSize);
+    composes: text-2xs from global;
 }
 
 .value {
@@ -40,6 +47,24 @@
     composes: lg_gap-x-0 from global;
     composes: lg_grid-flow-row from global;
     composes: lg_items-left from global;
+}
+
+.orderDateContainer {
+    composes: border-2 from global;
+    composes: border-l-0 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+
+    composes: lg_border-0 from global;
+}
+
+.orderTotalContainer {
+    composes: border-b-2 from global;
+    composes: border-t-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+
+    composes: lg_border-0 from global;
 }
 
 .orderNumberContainer,
@@ -60,10 +85,14 @@
 .orderItemsContainer {
     composes: cell;
 
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: col-end-span2 from global;
     composes: px-0 from global;
     composes: py-xs from global;
 
+    composes: lg_border-0 from global;
     composes: lg_col-end-auto from global;
     composes: lg_p-0 from global;
 }
@@ -97,17 +126,21 @@
 .orderStatusBadge {
     composes: label;
 
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-bold from global;
     composes: justify-self-start from global;
     composes: px-xs from global;
     composes: py-1 from global;
     composes: rounded-md from global;
-    border: 1px solid rgb(var(--venia-global-color-gray-400));
 }
 
 .content {
+    composes: border-t-2 from global;
+    composes: border-solid from global;
+    composes: border-light from global;
     composes: p-sm from global;
-    border-top: 2px solid rgb(var(--venia-global-color-gray));
     grid-column: 1 / -1;
 }
 
@@ -116,13 +149,6 @@
 }
 
 @media (max-width: 959px) {
-    .cell {
-        border-left: none;
-    }
-
-    .orderItemsContainer {
-        border-bottom: 2px solid rgb(var(--venia-global-color-gray));
-    }
 
     /* TODO @TW: cannot compose */
     .orderItemsContainer:empty {
@@ -134,13 +160,4 @@
         grid-row: 1;
     }
 
-    .orderDateContainer {
-        border: 2px solid rgb(var(--venia-global-color-gray));
-        border-left: none;
-    }
-
-    .orderTotalContainer {
-        border-bottom: 2px solid rgb(var(--venia-global-color-gray));
-        border-top: 2px solid rgb(var(--venia-global-color-gray));
-    }
 }

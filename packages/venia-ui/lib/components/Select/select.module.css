@@ -9,18 +9,17 @@
 .input,
 .input_error {
     composes: input from '../Field/field.module.css';
-
     grid-area: input-start / input-start / input-end / icon-end;
-    /* TODO @TW: review */
-    padding-right: calc(2.25rem - 1px);
+    padding-right: calc(2.25rem - 1px); /* TODO @TW: review */
+
+    composes: disabled_text-subtle from global;
 }
 
-.input:disabled {
-    /* TODO @TW: cannot compose */
-    pointer-events: none;
-    color: rgb(var(--venia-global-color-gray-darker));
+
+.input {
+    composes: disabled_pointer-events-none from global;
 }
 
 .input_error {
-    border-color: rgb(var(--venia-global-color-red-400));
+    composes: border-error from global;
 }

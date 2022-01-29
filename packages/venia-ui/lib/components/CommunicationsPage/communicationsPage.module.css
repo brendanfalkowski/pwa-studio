@@ -9,8 +9,8 @@
 
 .title {
     composes: font-bold from global;
+    composes: font-serif from global;
     composes: justify-self-center from global;
-    font-family: var(--venia-global-fontFamily-serif);
 }
 
 .form {

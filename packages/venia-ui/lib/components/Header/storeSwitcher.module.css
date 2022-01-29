@@ -23,8 +23,12 @@
 
 .menu {
     composes: absolute from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: bottom-md from global;
-    composes: invisible from global;;
+    composes: invisible from global;
     composes: left-xs from global;
     composes: max-w-[90vw] from global;
     composes: opacity-0 from global;
@@ -32,12 +36,10 @@
     composes: pt-2xs from global;
     composes: right-auto from global;
     composes: rounded from global;
+    composes: shadow-menu from global;
     composes: top-auto from global;
     composes: w-max from global;
     composes: z-menu from global;
-    background-color: rgb(var(--venia-global-color-gray-50));
-    border: 1px solid rgb(var(--venia-global-color-gray-dark));
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transform: translate3d(0, -8px, 0);
     transition-duration: 192ms;
     transition-timing-function: var(--venia-global-anim-out);
@@ -60,10 +62,7 @@
 }
 
 .menuItem {
-}
-
-.menuItem:hover {
-    background-color: rgb(var(--venia-global-color-gray));
+    composes: hover_bg-subtle from global;
 }
 
 .groups {
@@ -78,6 +77,9 @@
 
 /* TODO @TW: cannot compose */
 .groupList:not(:last-child) {
+    /* composes: border-b-1 from global; */
+    /* composes: border-solid from global; */
+    /* composes: border-subtle from global; */
     border-bottom: 1px solid rgb(var(--venia-global-color-gray-dark));
 }
 

@@ -28,10 +28,8 @@
 
 /* These heights may change based on PWA-605 and should be based on 1.5 and 2.5 visible items. */
 .contents {
-    background-color: rgb(var(--venia-global-color-background));
-    box-shadow: 0 1px 6px rgb(var(--venia-global-color-gray-900) / 0.2);
-    min-height: 20rem;
     composes: absolute from global;
+    composes: bg-white from global;
     composes: grid from global;
     composes: max-h-[35rem] from global;
     composes: overflow-hidden from global;
@@ -39,6 +37,8 @@
     composes: rounded-sm from global;
     composes: top-0 from global;
     composes: w-[22.5rem] from global;
+    box-shadow: 0 1px 6px rgb(var(--venia-global-color-gray-900) / 0.2);
+    min-height: 20rem;
     transform: translate3d(0, -8px, 0);
     transition-duration: 192ms;
     transition-property: transform;
@@ -54,6 +54,9 @@
 }
 
 .header {
+    composes: border-b-2 from global;
+    composes: border-solid from global;
+    composes: border-light from global;
     composes: font-semibold from global;
     composes: gap-y-xs from global;
     composes: grid from global;
@@ -65,8 +68,7 @@
     composes: pb-2xs from global;
     composes: pt-xs from global;
     composes: px-2xs from global;
-    border-bottom: 2px solid rgb(var(--venia-global-color-gray-100));
-    font-size: var(--venia-global-typography-heading-XS-fontSize);
+    composes: text-sm from global;
 }
 
 .stockStatusMessageContainer {
@@ -114,6 +116,9 @@
 }
 
 .footer {
+    composes: border-t-2 from global;
+    composes: border-solid from global;
+    composes: border-light from global;
     composes: gap-2xs from global;
     composes: grid from global;
     composes: items-center from global;
@@ -123,25 +128,24 @@
     composes: my-0 from global;
     composes: overflow-hidden from global;
     composes: p-xs from global;
+    composes: text-sm from global;
     min-height: 3rem;
-    border-top: 2px solid rgb(var(--venia-global-color-gray));
-    font-size: var(--venia-typography-body-S-fontSize);
 }
 
 .checkoutButton {
     composes: root_highPriority from '../Button/button.module.css';
 
+    composes: bg-brand-dark from global;
+    composes: border-0 from global;
     composes: font-bold from global;
     composes: m-auto from global;
     composes: w-[10rem] from global;
     grid-column: 1 / span 1;
-    background-color: rgb(var(--venia-brand-color-1-700));
-    border: none;
 }
 
 .editCartButton {
+    composes: text-sm from global;
     composes: underline from global;
-    font-size: var(--venia-global-fontSize-100);
 }
 
 .emptyCart {

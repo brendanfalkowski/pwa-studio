@@ -38,7 +38,8 @@
 
 .currentImage_placeholder {
     composes: currentImage;
-    background-color: rgb(var(--venia-global-color-gray));
+
+    composes: bg-subtle from global;
 }
 
 .previousButton,
@@ -65,8 +66,10 @@
 .chevron {
     composes: root from '../Icon/icon.module.css';
 
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-transparent from global;
     composes: self-center from global;
-    border: 2px solid transparent;
 }
 
 /* TODO @TW: cannot compose */

@@ -1,11 +1,11 @@
 .root {
+    composes: gap-2xs from global;
+    composes: grid from global;
     /*
      * Each grid item gets at least 125px.
      * Wrap the grid items.
      */
-    composes: grid from global;
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-    composes: gap-2xs from global;
 }
 
 .radioContainer {
@@ -19,8 +19,8 @@
 }
 
 .message {
-    font-size: 1rem;
     composes: mt-xs from global;
+    composes: text-colorDefault from global;
 }
 
 /* TODO @TW: cannot compose */

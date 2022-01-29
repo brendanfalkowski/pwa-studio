@@ -1,8 +1,8 @@
 .root {
     composes: pb-xs from global;
     composes: text-center from global;
-    color: rgb(var(--venia-global-color-gray-700));
-    font-size: var(--venia-global-fontSize-100);
+    composes: text-sm from global;
+    composes: text-subtle from global;
 
     composes: lg_hidden from global;
 }

@@ -17,9 +17,9 @@
 }
 
 .edit_button {
-    color: rgb(var(--venia-brand-color-1-700));
     composes: p-xs from global;
     composes: -m-xs from global;
+    composes: text-brand-dark from global;
 }
 
 .heading {
@@ -43,7 +43,7 @@
 }
 
 .edit_icon {
-    stroke: rgb(var(--venia-brand-color-1-700));
+    composes: stroke-brand-base from global;
 }
 
 .edit_text {

@@ -11,9 +11,9 @@
 
 .heading {
     composes: font-bold from global;
+    composes: font-serif from global;
     composes: justify-self-center from global;
     composes: pb-xs from global;
-    font-family: var(--venia-global-fontFamily-serif);
 
     composes: lg_pb-0 from global;
 }
@@ -23,11 +23,13 @@
 }
 
 .fetchError {
-    border-left: 4px solid rgb(var(--venia-global-color-error));
-    color: rgb(var(--venia-global-color-error));
-    font-size: var(--venia-typography-body-S-fontSize);
+    composes: border-l-4 from global;
+    composes: border-solid from global;
+    composes: border-error from global;
     composes: font-semibold from global;
     composes: pl-xs from global;
     composes: pr-0 from global;
     composes: py-2.5 from global;
+    composes: text-error from global;
+    composes: text-sm from global;
 }

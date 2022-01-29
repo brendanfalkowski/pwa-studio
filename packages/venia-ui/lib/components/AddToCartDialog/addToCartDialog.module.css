@@ -20,8 +20,8 @@
 
 .name {
     composes: font-bold from global;
-    font-family: var(--venia-global-fontFamily-serif);
-    font-size: var(--venia-typography-body-XXXL-fontSize);
+    composes: font-serif from global;
+    composes: text-xl from global;
 }
 
 .price {
@@ -30,16 +30,19 @@
 
 /* TODO @TW: cannot compose */
 .price:empty {
+    /* composes: bg-subtle from global; */
     background-color: rgb(var(--venia-global-color-gray));
     min-height: 1rem;
     width: 4rem;
 }
 
 .optionTitle {
+    composes: border-t-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: px-0 from global;
     composes: py-xs from global;
-    border-top: 1px solid rgb(var(--venia-global-color-border));
 }
 
 .dialogHeaderText {

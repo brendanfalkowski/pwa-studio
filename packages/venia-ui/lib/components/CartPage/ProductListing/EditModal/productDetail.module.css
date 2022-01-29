@@ -1,5 +1,7 @@
 .root {
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: gap-xs from global;
     composes: grid from global;
     composes: pb-xs from global;
@@ -15,15 +17,15 @@
 }
 
 .productName {
-    font-size: 1.5rem;
     composes: font-semibold from global;
+    composes: text-xl from global;
 }
 
 .stockRow {
     composes: flex from global;
     composes: font-light from global;
-    font-size: 0.875rem;
     composes: justify-between from global;
+    composes: text-sm from global;
 }
 
 .price {

@@ -2,9 +2,10 @@
 }
 
 .error {
-    color: var(--venia-global-color-error);
+    composes: text-error from global;
 }
 
+/* TODO @TW: cannot compose */
 div[data-braintree-id='card'] {
     border: none;
 }

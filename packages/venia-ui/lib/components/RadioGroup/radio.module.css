@@ -6,22 +6,32 @@
     composes: justify-items-center from global;
     composes: leading-normal from global;
     composes: m-0 from global;
-    color: rgb(var(--venia-global-color-gray-900));
+    composes: text-colorDefault from global;
     grid-template-areas: 'input label';
     grid-template-columns: min-content 1fr;
 }
 
 .input {
+    composes: appearance-none from global;
+    composes: bg-clip-content from global;
+    composes: bg-transparent from global;
+    composes: border-8 from global;
+    composes: border-solid from global;
+    composes: border-transparent from global;
     composes: h-[1.5rem] from global;
     composes: m-0 from global;
     composes: rounded-full from global;
     composes: w-[1.5rem] from global;
     composes: z-surface from global;
-    background: none;
-    background-clip: content-box;
-    border: 7px solid transparent;
     grid-area: input;
-    -webkit-appearance: none;
+
+    composes: active_outline-none from global;
+    composes: active_shadow-radioActive from global;
+
+    composes: checked_bg-brand-dark from global;
+
+    composes: focus_outline-none from global;
+    composes: focus_shadow-radioFocus from global;
 }
 
 .icon {
@@ -31,27 +41,20 @@
     grid-area: input;
 }
 
+/* TODO @TW: cannot compose */
 .icon svg {
+    /* composes: stroke-gray-600 from global; */
     stroke: rgb(var(--venia-global-color-gray-600));
 }
 
 .label {
-    font-size: var(--venia-typography-body-S-fontSize);
-    grid-area: label;
     composes: justify-self-start from global;
-}
-
-.input:checked {
-    background-color: rgb(var(--venia-brand-color-1-700));
-}
-
-.input:checked + .icon svg {
-    stroke: rgb(var(--venia-brand-color-1-700));
+    composes: text-sm from global;
+    grid-area: label;
 }
 
 /* TODO @TW: cannot compose */
-.input:active,
-.input:focus {
-    box-shadow: -3px 3px rgb(var(--venia-brand-color-1-100));
-    outline: none;
+.input:checked + .icon svg {
+    /* composes: stroke-brand-base from global; */
+    stroke: rgb(var(--venia-brand-color-1-700));
 }

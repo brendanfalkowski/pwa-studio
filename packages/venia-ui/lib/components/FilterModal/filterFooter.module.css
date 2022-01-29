@@ -1,4 +1,5 @@
 .root {
+    composes: bg-white from global;
     composes: content-center from global;
     composes: gap-y-1 from global;
     composes: grid from global;
@@ -6,5 +7,4 @@
     composes: items-center from global;
     composes: justify-items-center from global;
     composes: relative from global;
-    background-color: white;
 }

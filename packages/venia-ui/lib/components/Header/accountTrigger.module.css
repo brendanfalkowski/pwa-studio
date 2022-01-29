@@ -11,7 +11,7 @@
 .root_open {
     composes: root;
 
-    box-shadow: 0 4px rgb(var(--venia-brand-color-1-700));
+    composes: shadow-headerTrigger from global;
 }
 
 .trigger {

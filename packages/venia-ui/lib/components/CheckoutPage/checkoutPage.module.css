@@ -34,15 +34,17 @@
 .cartLink {
     composes: root from '../LinkButton/linkButton.module.css';
 
-    font-size: inherit;
+    composes: text-inherit from global;
 }
 
 .stepper_heading {
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: pb-xs from global;
+    composes: text-colorDefault from global;
     composes: uppercase from global;
-    font-size: 1rem;
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
 
     composes: lg_pb-md from global;
 }
@@ -60,6 +62,9 @@
 }
 
 .signInContainer {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: gap-xs from global;
     composes: grid from global;
     composes: grid-flow-row from global;
@@ -69,7 +74,6 @@
     composes: p-xs from global;
     composes: rounded-md from global;
     composes: row-start-1 from global;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
 
     composes: lg_grid-flow-col from global;
     composes: lg_justify-items-left from global;
@@ -131,7 +135,7 @@
 }
 
 .formErrors {
-    border-color: rgb(var(--venia-global-color-error));
+    composes: border-error from global;
     composes: border-solid from global;
     composes: border-t-0 from global;
     composes: border-r-0 from global;

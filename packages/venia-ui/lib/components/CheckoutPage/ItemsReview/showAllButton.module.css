@@ -1,8 +1,10 @@
 .root {
-    composes: w-full from global;
+    composes: border-t-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: px-0 from global;
     composes: py-3 from global;
-    border-top: 2px solid rgb(var(--venia-global-color-gray-400));
+    composes: w-full from global;
 }
 
 .content {
@@ -15,8 +17,8 @@
 
 .text {
     composes: font-semibold from global;
-    font-size: var(--venia-global-fontSize-100);
-    color: rgb(var(--venia-brand-color-1-700));
+    composes: text-brand-dark from global;
+    composes: text-sm from global;
 }
 
 .arrowDown {

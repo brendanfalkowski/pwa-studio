@@ -18,8 +18,8 @@
 }
 
 .errorText {
-    color: rgb(var(--venia-global-color-error));
     composes: leading-normal from global;
+    composes: text-error from global;
 }
 
 /* TODO @TW: cannot compose */
@@ -36,12 +36,14 @@
 }
 
 .image {
+    composes: bg-subtle from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: h-full from global;
     composes: object-contain from global;
     composes: object-center from global;
     composes: rounded-sm from global;
-    background-color: rgb(var(--venia-global-color-gray));
-    border: solid 1px rgb(var(--venia-global-color-border));
 }
 
 .details {
@@ -69,8 +71,8 @@
 }
 
 .price {
+    composes: text-sm from global;
     grid-area: price;
-    font-size: var(--venia-typography-body-S-fontSize);
 }
 
 .quantity {
@@ -83,22 +85,22 @@
 }
 
 .kebab {
-    grid-area: kebab;
     composes: relative from global;
+    grid-area: kebab;
 }
 
 .sectionText {
+    composes: pointer-events-none from global;
     composes: px-2xs from global;
     composes: py-1 from global;
-    font-size: var(--venia-typography-body-S-fontSize);
-    composes: pointer-events-none from global;
+    composes: text-sm from global;
 }
 
 .options {
-    grid-area: options;
-    font-size: var(--venia-typography-body-S-fontSize);
-    composes: grid from global;
     composes: gap-0.5 from global;
+    composes: grid from global;
+    composes: text-sm from global;
+    grid-area: options;
 }
 
 .optionLabel {
@@ -109,8 +111,8 @@
 
 .stockStatusMessage {
     composes: font-semibold from global;
-    color: rgb(var(--venia-global-color-error));
-    font-size: var(--venia-global-fontSize-100);
+    composes: text-error from global;
+    composes: text-sm from global;
     grid-area: stock;
 }
 
@@ -127,8 +129,8 @@
     composes: inline-flex from global;
     composes: px-2.5 from global;
     composes: py-3.5 from global;
+    composes: text-sm from global;
     composes: w-full from global;
-    font-size: var(--venia-typography-body-S-fontSize);
 }
 
 .addToListButton_selected {

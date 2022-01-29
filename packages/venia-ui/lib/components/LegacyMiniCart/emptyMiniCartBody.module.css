@@ -8,9 +8,9 @@
 }
 
 .emptyTitle {
-    font-size: 1.5rem;
     composes: leading-tight from global;
     composes: mb-sm from global;
+    composes: text-xl from global;
 }
 
 .continue {

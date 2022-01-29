@@ -5,17 +5,19 @@
 }
 
 .optionRoot {
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: px-0 from global;
     composes: py-xs from global;
 }
 
 .quantityLabel {
-    font-size: 1rem;
     composes: font-semibold from global;
     composes: leading-normal from global;
     composes: mb-sm from global;
     composes: pt-xs from global;
+    composes: text-colorDefault from global;
 }
 
 .quantityRoot {
@@ -43,7 +45,7 @@
     composes: inline-block from global;
     composes: leading-normal from global;
     composes: pt-xs from global;
-    color: rgb(var(--venia-global-color-error));
+    composes: text-error from global;
 }
 
 .errorContainer {

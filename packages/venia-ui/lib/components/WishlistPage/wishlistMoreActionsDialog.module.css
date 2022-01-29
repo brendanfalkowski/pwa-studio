@@ -11,7 +11,9 @@
     grid-template-columns: auto 1fr auto;
 }
 
-.rowButton:nth-child(even) {
-    border-top: 2px solid rgb(var(--venia-global-color-gray));
-    border-bottom: 2px solid rgb(var(--venia-global-color-gray));
+.rowButton {
+    composes: even_border-bottom-2 from global;
+    composes: even_border-light from global;
+    composes: even_border-solid from global;
+    composes: even_border-top-2 from global;
 }

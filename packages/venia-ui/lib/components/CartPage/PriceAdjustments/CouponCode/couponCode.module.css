@@ -16,16 +16,21 @@
     }
 }
 
+/* TODO @TW: cannot compose */
 .entryFormError input {
+    /* composes: border-error from global; */
     border-color: rgb(var(--venia-global-color-red-400));
 }
 
+/* TODO @TW: cannot compose */
 .entryFormError input:focus {
+    /* composes: border-gray-600 from global; */
     border-color: rgb(var(--venia-global-color-gray-600));
 }
 
 /* TODO @TW: cannot compose */
 .entryFormError p {
+    /* composes: text-error from global; */
     color: rgb(var(--venia-global-color-error));
     /* composes: font-semibold from global; */
     font-weight: 600;
@@ -35,7 +40,7 @@
     composes: leading-normal from global;
     /* Duplicate the left/right/bottom padding on the accordion section */
     composes: pt-sm from global;
-    color: rgb(var(--venia-global-color-error));
+    composes: text-error from global;
 }
 
 /* Styles for "removal" view. */

@@ -1,21 +1,17 @@
 .root {
+    composes: bg-white from global;
     composes: block from global;
     composes: border-0 from global;
     composes: w-full from global;
-    background-color: white;
 
+    composes: focus_bg-gradient-radial from global;
     composes: focus_outline-none from global;
 }
 
-.root:focus {
-    background-image: radial-gradient(
-        circle,
-        rgb(var(--venia-global-color-gray)),
-        white
-    );
-}
-
 .content {
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: gap-xs from global;
     composes: grid from global;
     composes: grid-flow-col from global;
@@ -28,21 +24,20 @@
     composes: text-left from global;
     grid-template-columns: 5rem 1fr 2rem;
     min-height: 4.5rem;
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
 }
 
 .label {
-    color: rgb(var(--venia-global-color-teal));
-    font-size: 14px;
     composes: font-semibold from global;
+    composes: text-brand from global;
+    composes: text-sm from global;
 }
 
 .summary {
-    font-size: 13px;
     composes: justify-self-stretch from global;
     composes: leading-normal from global;
     composes: overflow-hidden from global;
     composes: overflow-ellipsis from global;
+    composes: text-sm from global;
     composes: whitespace-nowrap from global;
 }
 

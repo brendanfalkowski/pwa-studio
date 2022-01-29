@@ -1,9 +1,9 @@
 .root {
+    composes: bg-gray-100 from global;
     composes: h-[2px] from global;
     composes: relative from global;
     composes: overflow-hidden from global;
     composes: w-full from global;
-    background: rgb(var(--venia-global-color-gray-100));
 }
 
 .root_absolute {
@@ -16,12 +16,12 @@
 
 .indicator_off {
     composes: absolute from global;
+    composes: bg-brand-dark from global;
     composes: h-full from global;
     composes: left-0 from global;
     composes: opacity-0 from global;
     composes: top-0 from global;
     composes: w-full from global;
-    background: rgb(var(--venia-global-color-blue-600));
     transform: translateX(-100%);
     transform-origin: left;
     transition: transform 0.25s linear;

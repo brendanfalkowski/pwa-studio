@@ -46,6 +46,8 @@
     grid-area: after;
 }
 
+/* TODO @TW: cannot compose */
 .before svg {
+    /* composes: stroke-gray-600 from global; */
     stroke: rgb(var(--venia-global-color-gray-600));
 }

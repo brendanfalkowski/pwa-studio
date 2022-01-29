@@ -2,7 +2,7 @@
 }
 
 .formErrors {
-    border-color: rgb(var(--venia-global-color-error));
+    composes: border-error from global;
     composes: border-solid from global;
     composes: border-t-0 from global;
     composes: border-r-0 from global;

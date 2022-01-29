@@ -1,8 +1,9 @@
 .root {
     --legacy-minicart-header-height: 3.5rem;
 
-    composes: content-start from global;
+    composes: bg-white from global;
     composes: bottom-0 from global;
+    composes: content-start from global;
     composes: fixed from global;
     composes: grid from global;
     composes: h-full from global;
@@ -14,7 +15,6 @@
     composes: top-0 from global;
     composes: w-full from global;
     composes: z-menu from global;
-    background-color: white;
     box-shadow: -1px 0 rgb(var(--venia-global-color-border));
     grid-template-rows: min-content 1fr;
     transform: translate3d(100%, 0, 0);

@@ -7,11 +7,11 @@
 }
 
 .message {
-    background-color: rgb(var(--venia-global-color-gray));
-    font-size: 0.875rem;
+    composes: bg-subtle from global;
     composes: leading-tight from global;
     composes: p-xs from global;
     composes: rounded from global;
+    composes: text-sm from global;
 }
 
 /* TODO @TW: cannot compose */

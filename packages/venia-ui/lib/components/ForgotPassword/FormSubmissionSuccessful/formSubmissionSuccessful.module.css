@@ -4,9 +4,9 @@
 }
 
 .text {
-    font-size: 0.875rem;
     composes: font-light from global;
     composes: leading-tight from global;
+    composes: text-sm from global;
 }
 
 .title {

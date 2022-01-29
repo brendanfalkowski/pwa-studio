@@ -17,18 +17,20 @@
 }
 
 .image {
+    composes: bg-subtle from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: h-[100px] from global;
     composes: object-contain from global;
     composes: object-center from global;
     composes: rounded-sm from global;
-    background-color: rgb(var(--venia-global-color-gray));
-    border: solid 1px rgb(var(--venia-global-color-border));
 }
 
 .name {
-    font-size: 0.875rem;
     composes: font-semibold from global;
     composes: pt-0.5 from global;
+    composes: text-sm from global;
     grid-area: name;
 }
 
@@ -37,19 +39,19 @@
 }
 
 .quantity {
-    composes: items-end from global;
     composes: flex from global;
-    grid-column: 2 / span 1;
-    font-size: 13px;
+    composes: items-end from global;
     composes: self-end from global;
+    composes: text-sm from global;
+    grid-column: 2 / span 1;
 }
 
 .quantityOperator {
-    color: rgb(var(--venia-global-color-text-alt));
     composes: inline-flex from global;
     composes: items-center from global;
     composes: mx-1.5 from global;
     composes: my-0 from global;
+    composes: text-subtle from global;
 }
 
 .price {
@@ -59,11 +61,11 @@
 
 .mask {
     composes: absolute from global;
+    composes: bg-subtle from global;
     composes: bottom-[-7px] from global;
     composes: left-[-24px] from global;
+    composes: opacity-50 from global;
     composes: right-[-24px] from global;
     composes: top-[-7px] from global;
-    background-color: rgb(var(--venia-global-color-gray));
-    composes: opacity-50 from global;
     composes: z-loadingCover from global;
 }

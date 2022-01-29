@@ -1,9 +1,9 @@
 .root {
+    composes: bg-gray-100 from global;
     composes: inline-block from global;
     composes: overflow-hidden from global;
     composes: pointer-events-none from global;
     composes: relative from global;
-    background: rgb(var(--venia-global-color-gray));
 }
 
 /* TODO @TW: cannot compose */
@@ -14,14 +14,15 @@
     left: 0;
     width: var(--venia-global-maxWidth); /* TODO @TW: review. this should use TW theme value "maxWidth.site" */
     height: 100%;
-    background: linear-gradient(
+    background-image: linear-gradient(
             to right,
             rgb(var(--venia-global-color-gray-50) / 0%) 0%,
             rgb(var(--venia-global-color-gray-50)) 40%,
             rgb(var(--venia-global-color-gray-50) / 0%) 80%,
             rgb(var(--venia-global-color-gray-50) / 0%) 100%
-        )
-        no-repeat;
+        );
+    /* composes: bg-no-repeat from global; */
+    background-repeat: none;
     background-size: var(--venia-global-maxWidth) 100%;
     -webkit-animation-name: shimmerAnimation;
     -webkit-animation-duration: 1s;
@@ -34,28 +35,28 @@
 .root_rectangle {
     composes: root;
 
-    min-height: var(--venia-typography-body-M-fontSize);
+    min-height: 1rem;
 }
 
 .root_button {
     composes: root from '../Button/button.module.css';
     composes: root;
 
-    border: none;
+    composes: border-0 from global;
 }
 
 .root_checkbox {
     composes: input from '../Checkbox/checkbox.module.css';
     composes: root;
 
-    border: none;
+    composes: border-0 from global;
 }
 
 .root_radio {
     composes: input from '../RadioGroup/radio.module.css';
     composes: root;
 
-    border: none;
+    composes: border-0 from global;
 }
 
 .root_textArea {
@@ -63,14 +64,14 @@
     composes: root;
 
     min-height: 6.75rem;
-    border: none;
+    composes: border-0 from global;
 }
 
 .root_textInput {
     composes: input from '../TextInput/textInput.module.css';
     composes: root;
 
-    border: none;
+    composes: border-0 from global;
 }
 
 @-webkit-keyframes shimmerAnimation {

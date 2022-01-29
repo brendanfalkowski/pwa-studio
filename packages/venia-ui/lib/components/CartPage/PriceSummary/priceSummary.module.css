@@ -2,8 +2,8 @@
 }
 
 .errorText {
-    color: rgb(var(--venia-global-color-error));
     composes: leading-normal from global;
+    composes: text-error from global;
 }
 
 .lineItems {

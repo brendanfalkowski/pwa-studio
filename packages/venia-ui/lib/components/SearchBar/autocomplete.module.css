@@ -16,6 +16,11 @@
 
 .root {
     composes: absolute from global;
+    composes: bg-white from global;
+    composes: border-2 from global;
+    composes: border-input from global;
+    composes: border-solid from global;
+    composes: border-t-0 from global;
     composes: gap-3 from global;
     composes: grid from global;
     composes: left-0 from global;
@@ -23,13 +28,10 @@
     composes: right-0 from global;
     composes: rounded-b-md from global;
     composes: rounded-t-none from global;
+    composes: shadow-inputFocus from global;
+    composes: text-sm from global;
     composes: top-9 from global;
     composes: z-menu from global;
-    background-color: white;
-    border: 2px solid rgb(var(--venia-global-color-gray-600));
-    border-top-style: none;
-    box-shadow: -6px 6px rgb(var(--venia-brand-color-1-100));
-    font-size: 0.8125rem;
     transition-property: opacity, transform, visibility;
 }
 
@@ -45,7 +47,7 @@
     composes: px-3 from global;
     composes: py-0 from global;
     composes: text-center from global;
-    color: rgb(var(--venia-global-color-text-alt));
+    composes: text-subtle from global;
 }
 
 /* TODO @TW: cannot compose */

@@ -10,7 +10,7 @@
 }
 
 .remainderCount {
-    color: rgb(var(--venia-global-color-text-hint));
-    font-size: var(--venia-typography-body-S-fontSize);
     composes: justify-self-center from global;
+    composes: text-sm from global;
+    composes: text-subtle from global;
 }

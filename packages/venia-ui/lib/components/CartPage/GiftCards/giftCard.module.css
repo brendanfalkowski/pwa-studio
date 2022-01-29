@@ -4,7 +4,7 @@
 }
 
 .balance {
-    font-size: 0.875rem;
+    composes: text-sm from global;
 }
 
 .code {

@@ -1,7 +1,9 @@
 .root {
-    composes: items-center from global;
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: flex from global;
+    composes: items-center from global;
     composes: mx-5 from global;
     composes: my-0 from global;
 }

@@ -8,8 +8,8 @@
 }
 
 .heading {
-    font-family: var(--venia-global-fontFamily-serif);
     composes: font-bold from global;
+    composes: font-serif from global;
     composes: justify-self-center from global;
     composes: capitalize from global;
 }
@@ -36,7 +36,7 @@
 }
 
 .pageInfo {
-    font-size: var(--venia-typography-body-S-fontSize);
+    composes: text-sm from global;
 }
 
 .search {
@@ -60,7 +60,7 @@
 }
 
 .submitIcon {
-    color: white;
+    composes: text-white from global;
 }
 
 .loadMoreButton {

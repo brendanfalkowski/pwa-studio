@@ -28,13 +28,13 @@
 
 .contents {
     composes: absolute from global;
+    composes: bg-white from global;
     composes: grid from global;
     composes: right-0 from global;
     composes: rounded-sm from global;
+    composes: shadow-menu from global;
     composes: top-0 from global;
     composes: w-[27.5rem] from global;
-    background-color: rgb(var(--venia-global-color-background));
-    box-shadow: 0 1px 6px rgb(var(--venia-global-color-gray-900) / 0.2);
     min-height: 10rem;
     transform: translate3d(0, -8px, 0);
     transition-duration: 192ms;

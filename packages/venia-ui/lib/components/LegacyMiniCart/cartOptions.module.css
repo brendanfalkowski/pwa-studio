@@ -14,7 +14,7 @@
     composes: grid-cols-1 from global;
     composes: grid-flow-col from global;
     composes: p-xs from global;
-    box-shadow: 0 1px rgb(var(--venia-global-color-border));
+    composes: shadow-thin from global;
 }
 
 .name {
@@ -32,8 +32,8 @@
 }
 
 .quantity {
-    border-color: rgb(var(--venia-global-color-border));
     composes: border-solid from global;
+    composes: border-subtle from global;
     composes: border-t-0 from global;
     composes: border-r-0 from global;
     composes: border-b from global;

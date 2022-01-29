@@ -1,7 +1,7 @@
 .root {
+    composes: bg-subtle from global;
     composes: rounded-sm from global;
     composes: w-full from global;
-    background-color: rgb(var(--venia-global-color-gray));
 }
 
 .container {

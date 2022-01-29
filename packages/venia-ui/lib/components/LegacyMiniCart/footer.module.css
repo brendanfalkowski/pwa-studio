@@ -1,5 +1,5 @@
 .root {
-    background-color: white;
+    composes: bg-white from global;
     composes: p-0 from global;
 }
 

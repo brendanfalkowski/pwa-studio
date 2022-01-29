@@ -5,35 +5,34 @@
 
 .menu {
     composes: absolute from global;
+    composes: bg-clip-padding from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: list-none from global;
     composes: mb-0 from global;
     composes: min-w-[10rem] from global;
     composes: mt-0.5 from global;
     composes: mx-0 from global;
     composes: right-0 from global;
     composes: rounded from global;
+    composes: shadow-menu from global;
+    composes: text-colorDefault from global;
+    composes: text-colorDefault from global;
     composes: text-left from global;
     composes: top-[110%] from global;
     composes: z-menu from global;
-    font-size: 1rem;
-    color: black;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgb(var(--venia-global-color-gray-dark));
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .menuItem {
-    border-bottom: 1px solid rgb(var(--venia-global-color-gray-dark));
-}
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
 
-/* TODO @TW: cannot compose */
-.menuItem:last-child {
-    border-bottom: none;
-}
+    composes: hover_bg-subtle from global;
 
-.menuItem:hover {
-    background-color: rgb(var(--venia-global-color-gray));
+    composes: last_border-b-0 from global;
 }
 
 .sortButton {
@@ -42,15 +41,10 @@
     composes: min-w-[6.26rem] from global;
 
     composes: lg_border-2 from global;
+    composes: lg_border-gray-500 from global;
     composes: lg_font-normal from global;
     composes: lg_normal-case from global;
     composes: lg_rounded-md from global;
-}
-
-@media (min-width: 960px) {
-    .sortButton {
-        border-color: rgb(var(--venia-global-color-gray-500));
-    }
 }
 
 .desktopText {
@@ -61,7 +55,7 @@
 
 .sortText {
     composes: leading-normal from global;
-    font-size: var(--venia-global-fontSize-200);
+    composes: text-colorDefault from global;
 }
 
 .desktopIconWrapper {
@@ -73,7 +67,7 @@
 .desktopIcon {
     composes: icon from '../Icon/icon.module.css';
 
-    stroke: rgb(var(--venia-global-color-gray-500));
+    composes: stroke-gray-500 from global;
 }
 
 .mobileText {

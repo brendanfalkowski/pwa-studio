@@ -1,12 +1,12 @@
 .menuItem {
+    composes: bg-white from global;
     composes: block from global;
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: w-full from global;
-    background-color: #fff;
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
-}
 
-.menuItem:hover {
-    background-color: #eee;
+    composes: hover_bg-gray-300 from global;
 }
 
 .button {
@@ -26,7 +26,7 @@
     composes: pl-2xs from global;
     composes: pointer-events-none from global;
     composes: pt-px from global;
-    font-size: 11px;
+    composes: text-2xs from global;
 }
 
 .icon {

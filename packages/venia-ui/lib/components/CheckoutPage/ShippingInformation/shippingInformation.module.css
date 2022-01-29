@@ -1,15 +1,19 @@
 .root {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: p-md from global;
     composes: rounded-md from global;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
 }
 
 .root_editMode {
     composes: root;
 
+    composes: border-b-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: p-0 from global;
     composes: rounded-none from global;
-    border-bottom: 2px solid rgb(var(--venia-global-color-gray-400));
 }
 
 .root_updated {
@@ -29,9 +33,9 @@
 }
 
 .editButton {
-    composes: p-xs from global;
     composes: -m-xs from global;
-    color: rgb(var(--venia-brand-color-1-700));
+    composes: p-xs from global;
+    composes: text-brand-dark from global;
 }
 
 .editWrapper {
@@ -48,7 +52,7 @@
 }
 
 .editIcon {
-    stroke: rgb(var(--venia-brand-color-1-700));
+    composes: stroke-brand-base from global;
 }
 
 .editText {

@@ -9,8 +9,10 @@
 }
 
 .payment_method {
+    composes: border-b-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: pb-xs from global;
-    border-bottom: 1px solid rgb(var(--venia-global-color-border));
 }
 
 /* TODO @TW: cannot compose */
@@ -20,8 +22,8 @@
 
 /* TODO @TW: cannot compose */
 .payment_method:last-of-type {
-    border-bottom-width: 0;
     /* composes: border-b-0 from global; */
+    border-bottom-width: 0;
 }
 
 .radio_label {
@@ -32,5 +34,5 @@
 .payment_errors {
     composes: grid from global;
     composes: gap-2xs from global;
-    color: rgb(var(--venia-global-color-error));
+    composes: text-error from global;
 }

@@ -13,7 +13,7 @@
 }
 
 .header {
-    font-family: var(--venia-global-fontFamily-serif);
+    composes: font-serif from global;
 }
 
 .contentContainer {
@@ -21,8 +21,10 @@
     composes: p-0 from global;
     composes: rounded-md from global;
 
+    composes: lg_border-2 from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-subtle from global;
     composes: lg_p-md from global;
-    border: 2px solid rgb(var(--venia-global-color-border));
 }
 
 .signInRoot {

@@ -3,6 +3,6 @@
     composes: items-center from global;
     composes: leading-none from global;
     composes: p-0.5 from global;
-    color: rgb(var(--venia-global-color-text-alt));
-    font-size: 0.8125rem;
+    composes: text-sm from global;
+    composes: text-subtle from global;
 }

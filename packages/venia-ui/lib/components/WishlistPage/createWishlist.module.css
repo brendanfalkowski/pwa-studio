@@ -45,10 +45,13 @@
 }
 
 .icon {
-    stroke: rgb(var(--venia-brand-color-1-600));
+    composes: stroke-brand-base from global;
 }
 
 .labelContainer {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: gap-x-2xs from global;
     composes: grid from global;
@@ -57,6 +60,5 @@
     composes: items-center from global;
     composes: justify-center from global;
     composes: rounded-md from global;
-    border: 2px dashed rgb(var(--venia-global-color-gray-400));
-    color: rgb(var(--venia-brand-color-1-600));
+    composes: text-brand-dark from global;
 }

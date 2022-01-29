@@ -23,10 +23,10 @@
 }
 
 .message {
-    color: rgb(var(--venia-global-color-text-alt));
-    font-size: 1rem;
-    letter-spacing: 0.25em;
+    composes: text-colorDefault from global;
+    composes: text-subtle from global;
     composes: uppercase from global;
+    letter-spacing: 0.25em;
 }
 
 .indicator {

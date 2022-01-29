@@ -30,7 +30,7 @@
 
 .headerText {
     composes: leading-tight from global;
-    color: rgb(var(--venia-global-color-text-alt));
+    composes: text-subtle from global;
     grid-area: header;
 }
 
@@ -55,7 +55,10 @@
 }
 
 .content {
-    border-top: 1px solid rgb(var(--venia-global-color-border));
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: border-t-0 from global;
     composes: grid from global;
     composes: grid-cols-1 from global;
     composes: gap-xs from global;
@@ -63,30 +66,23 @@
     grid-area: content;
     grid-auto-rows: minmax(6rem, max-content);
 
+    composes: lg_border-top-1 from global;
     composes: lg_pt-md from global;
     composes: lg_grid-cols-3 from global;
 }
 
-@media (max-width: 959px) {
-    .content {
-        border-top: none;
-    }
-}
-
 .addButton {
+    composes: border-2 from global;
+    composes: border-dashed from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: rounded-md from global;
-    border: 2px dashed rgb(var(--venia-global-color-gray-400));
-    font-size: 0.875rem;
+    composes: text-brand-dark from global;
+    composes: text-sm from global;
     transition: border-color 384ms var(--venia-global-anim-standard);
-    color: rgb(var(--venia-brand-color-1-700));
 
     composes: focus_outline-none from global;
-}
+    composes: focus_shadow-buttonFocus from global;
 
-.addButton:focus {
-    box-shadow: -6px 6px rgb(var(--venia-global-color-blue-700) / 0.3);
-}
-.addButton:hover {
-    border-color: rgb(var(--venia-brand-color-1-600));
+    composes: hover_border-brand-dark from global;
 }

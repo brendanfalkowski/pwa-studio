@@ -8,9 +8,9 @@
 
 .forgotPassword {
     composes: block from global;
+    composes: text-error from global;
+    composes: text-sm from global;
     composes: underline from global;
-    color: rgb(var(--venia-global-color-error));
-    font-size: 0.8rem;
 }
 
 .form {
@@ -20,12 +20,12 @@
 
 .modal {
     composes: absolute from global;
+    composes: bg-subtle from global;
     composes: bottom-0 from global;
     composes: h-full from global;
     composes: invisible from global;;
     composes: text-center from global;
     composes: w-full from global;
-    background-color: rgb(var(--venia-global-color-gray));
 }
 
 .modal_active {
@@ -58,7 +58,7 @@
 }
 
 .title {
-    font-size: var(--venia-global-fontSize-400);
     composes: capitalize from global;
     composes: pt-2xs from global;
+    composes: text-lg from global;
 }

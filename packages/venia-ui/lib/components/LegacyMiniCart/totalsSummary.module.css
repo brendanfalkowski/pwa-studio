@@ -7,7 +7,7 @@
 }
 
 .subtotalLabel {
-    color: rgb(var(--venia-global-color-text-alt));
+    composes: text-subtle from global;
 }
 
 .subtotalValue {

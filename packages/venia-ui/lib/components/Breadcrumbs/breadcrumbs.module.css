@@ -1,11 +1,10 @@
 .root {
-    composes: h-auto from global;
     composes: mt-xs from global;
     composes: ml-xs from global;
-    font-size: 0.875rem;
+    composes: text-sm from global;
 
     /* Permanent height to prevent pop-in. */
-    composes: h-[0.875rem] from global;
+    composes: h-5 from global;
 
     /* Show ellipses when overflowing. */
     composes: overflow-hidden from global;

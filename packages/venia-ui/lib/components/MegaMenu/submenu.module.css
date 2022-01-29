@@ -1,7 +1,6 @@
 .submenu {
-    background-color: rgb(var(--venia-global-color-gray-50));
-    box-shadow: 0 3px rgb(var(--venia-global-color-gray-100));
     composes: absolute from global;
+    composes: bg-white from global;
     composes: flex-wrap from global;
     composes: hidden from global;
     composes: justify-between from global;
@@ -10,6 +9,7 @@
     composes: py-5 from global;
     composes: right-0 from global;
     composes: top-full from global;
+    box-shadow: 0 3px rgb(var(--venia-global-color-gray-100));
 }
 
 /* TODO @TW: cannot compose */

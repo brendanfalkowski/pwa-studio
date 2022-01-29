@@ -4,8 +4,8 @@
 }
 
 .message {
-    font-size: 0.875rem;
     composes: leading-normal from global;
+    composes: text-sm from global;
 }
 
 .prompt {

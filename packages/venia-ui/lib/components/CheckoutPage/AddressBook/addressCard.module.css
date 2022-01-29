@@ -1,4 +1,7 @@
 .root {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: content-start from global;
     composes: cursor-pointer from global;
     composes: gap-y-2xs from global;
@@ -8,10 +11,13 @@
     composes: py-xs from global;
     composes: relative from global;
     composes: rounded-md from global;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
-    box-shadow: none;
-    font-size: 1rem;
+    composes: shadow-none from global;
+    composes: text-colorDefault from global;
     transition: border-color 384ms var(--venia-global-anim-in);
+
+    composes: focus_shadow-buttonFocus from global;
+
+    composes: hover_border-brand-dark from global;
 
     composes: lg_px-md from global;
     composes: lg_py-xs from global;
@@ -20,21 +26,13 @@
 .root_selected {
     composes: root;
 
-    border-color: rgb(var(--venia-brand-color-1-600));
+    composes: border-brand-dark from global;
     composes: cursor-default from global;
 }
 
 .root_updated {
     composes: root_selected;
     animation: flash var(--venia-global-anim-bounce) 640ms 2;
-}
-
-.root:focus {
-    box-shadow: -6px 6px rgb(var(--venia-global-color-blue-700) / 0.3);
-}
-
-.root:hover {
-    border-color: rgb(var(--venia-brand-color-1-600));
 }
 
 .defaultCard {
@@ -56,20 +54,22 @@
 }
 
 .editIcon {
-    stroke: rgb(var(--venia-brand-color-1-700));
+    composes: stroke-brand-base from global;
     fill: var(--fill, white);
     transition: fill 384ms var(--venia-global-anim-standard);
 }
 
 .defaultBadge {
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: mb-1 from global;
     composes: px-sm from global;
     composes: py-1.5 from global;
     composes: rounded-md from global;
+    composes: text-xs from global;
     composes: w-max from global;
-    border: 1px solid rgb(var(--venia-global-color-gray-400));
-    font-size: 0.75rem;
 }
 
 .name {

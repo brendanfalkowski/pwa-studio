@@ -1,5 +1,6 @@
 .counter {
     composes: absolute from global;
+    composes: bg-brand-dark from global;
     composes: font-semibold from global;
     composes: leading-tight from global;
     composes: left-sm from global;
@@ -7,10 +8,9 @@
     composes: px-1 from global;
     composes: py-0 from global;
     composes: rounded-full from global;
+    composes: text-sm from global;
+    composes: text-white from global;
     composes: top-1.5 from global;
-    background-color: rgb(var(--venia-brand-color-1-700));
-    color: rgb(var(--venia-global-color-background));
-    font-size: 0.8125rem;
 }
 
 .trigger {
@@ -38,13 +38,13 @@
 .triggerContainer_open {
     composes: triggerContainer;
 
-    box-shadow: 0 4px rgb(var(--venia-brand-color-1-700));
+    composes: shadow-headerTrigger from global;
 }
 
 .link {
     composes: trigger;
 
-    composes: hidden from global;
+    composes: flex from global;
 
-    composes: lg_flex from global;
+    composes: lg_hidden from global;
 }

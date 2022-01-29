@@ -10,6 +10,7 @@
 
 .dropdown {
     composes: absolute from global;
+    composes: bg-xxx from global;
     composes: grid from global;
     composes: items-center from global;
     composes: right-5 from global;
@@ -30,7 +31,7 @@
 }
 
 .kebab {
+    composes: bg-white from global;
+    composes: border-0 from global;
     composes: outline-none from global;
-    border: none;
-    background-color: #fff;
 }

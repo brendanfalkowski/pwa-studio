@@ -6,14 +6,11 @@
     composes: py-xs from global;
     composes: rounded-none from global;
 
+    composes: lg_border-2 from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-subtle from global;
     composes: lg_p-md from global;
     composes: lg_rounded-md from global;
-}
-
-@media (min-width: 960px) {
-    .root {
-        border: 2px solid rgb(var(--venia-global-color-gray-400));
-    }
 }
 
 .heading {

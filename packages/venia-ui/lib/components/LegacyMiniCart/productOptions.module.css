@@ -1,10 +1,10 @@
 .options {
-    font-size: 13px;
-    grid-area: options;
     composes: leading-normal from global;
     composes: max-h-[54px] from global;
     composes: mt-1 from global;
     composes: overflow-y-auto from global;
+    composes: text-sm from global;
+    grid-area: options;
 }
 
 .optionLabel {

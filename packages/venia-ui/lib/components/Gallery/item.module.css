@@ -35,7 +35,8 @@
 
 .imagePlaceholder {
     composes: image;
-    background-color: rgb(var(--venia-global-color-gray));
+
+    composes: bg-subtle from global;
 }
 
 .actionsContainer {
@@ -56,11 +57,12 @@
 
 .name,
 .price {
-    font-size: var(--venia-typography-detail-XL-fontSize);
+    composes: text-colorDefault from global;
     min-height: 1rem;
 }
 
 .unavailableContainer {
+    composes: bg-subtle from global;
     composes: gap-x-2xs from global;
     composes: grid from global;
     composes: grid-flow-col from global;
@@ -68,8 +70,7 @@
     composes: items-center from global;
     composes: justify-start from global;
     composes: p-3 from global;
+    composes: text-sm from global;
+    composes: text-subtle from global;
     composes: w-full from global;
-    background-color: rgb(var(--venia-global-color-gray));
-    color: rgb(var(--venia-global-color-gray-700));
-    font-size: var(--venia-global-fontSize-100);
 }

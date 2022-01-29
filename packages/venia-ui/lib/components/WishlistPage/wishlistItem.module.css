@@ -11,13 +11,13 @@
 }
 
 .name {
-    font-size: var(--venia-typography-detail-XL-fontSize);
     composes: font-semibold from global;
+    composes: text-colorDefault from global;
 }
 
 .detail {
-    color: rgb(var(--venia-global-color-text-alt));
-    font-size: var(--venia-typography-detail-L-fontSize);
+    composes: text-sm from global;
+    composes: text-subtle from global;
 }
 
 .option {
@@ -25,12 +25,12 @@
 }
 
 .outOfStock {
-    color: rgb(var(--venia-global-color-error));
-    font-size: var(--venia-typography-detail-L-fontSize);
+    composes: text-sm from global;
+    composes: text-error from global;
 }
 
 .priceContainer {
-    font-size: var(--venia-typography-detail-XL-fontSize);
+    composes: text-colorDefault from global;
 }
 
 .image {
@@ -68,11 +68,11 @@
 }
 
 .moreActions {
+    composes: bg-gray-100 from global;
     composes: hidden from global;
     /* Hide actions menu until PWA-1683 */
     /* composes: inline-flex from global; */
     composes: items-center from global;
     composes: p-0.5 from global;
     composes: rounded-full from global;
-    background-color: rgb(var(--venia-global-color-gray-100));
 }

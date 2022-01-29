@@ -1,7 +1,8 @@
 .root {
+    composes: gap-x-xs from global;
     composes: grid from global;
     composes: grid-cols-autoFirst from global;
-    composes: gap-x-xs from global;
+    composes: mt-sm from global;
     composes: opacity-100 from global;
     composes: visible from global;
     grid-template-rows: auto auto 1fr;
@@ -9,7 +10,6 @@
     transition-duration: 384ms;
     transition-property: opacity, visbility;
     transition-timing-function: var(--venia-global-anim-standard);
-    composes: mt-sm from global;
 }
 
 .root_hidden {
@@ -22,9 +22,11 @@
 }
 
 .thumbnail {
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
-    border: solid 1px rgb(var(--venia-global-color-border));
 }
 
 .name {
@@ -34,17 +36,17 @@
 }
 
 .quantity {
+    composes: mt-xs from global;
+    composes: text-sm from global;
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
-    font-size: 85%;
-    composes: mt-xs from global;
 }
 
 .options {
+    composes: gap-2xs from global;
     composes: grid from global;
+    composes: mt-xs from global;
+    composes: text-sm from global;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    composes: gap-2xs from global;
-    font-size: 85%;
-    composes: mt-xs from global;
 }

@@ -20,7 +20,12 @@
 }
 
 .sidebarContainer {
+    composes: border-t-1 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     grid-column: 2;
+
+    composes: lg_border-0 from global;
 }
 
 .header {
@@ -58,16 +63,4 @@
 
 .additionalText {
     composes: text;
-}
-
-/*
- * Mobile-specific styles.
- */
-
-@media (max-width: 959px) {
-    .sidebarContainer {
-        grid-column: 1;
-        grid-row: auto;
-        border-top: 1px solid rgb(var(--venia-global-color-border));
-    }
 }

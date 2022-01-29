@@ -9,9 +9,9 @@
 }
 
 .heading {
-    font-family: var(--venia-global-fontFamily-serif);
     composes: capitalize from global;
     composes: font-bold from global;
+    composes: font-serif from global;
     composes: leading-tight from global;
     composes: mb-md from global;
     composes: text-center from global;
@@ -38,20 +38,17 @@
 }
 
 .addButton {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: rounded-md from global;
-    border: 2px dashed rgb(var(--venia-global-color-gray-400));
-    font-size: 0.875rem;
+    composes: text-brand-dark from global;
+    composes: text-sm from global;
     transition: border-color 384ms var(--venia-global-anim-standard);
-    color: rgb(var(--venia-brand-color-1-700));
 
     composes: focus_outline-none from global;
-}
+    composes: focus_shadow-buttonFocus from global;
 
-.addButton:focus {
-    box-shadow: -6px 6px rgb(var(--venia-global-color-blue-700) / 0.3);
-}
-
-.addButton:hover {
-    border-color: rgb(var(--venia-brand-color-1-600));
+    composes: hover_border-brand-dark from global;
 }

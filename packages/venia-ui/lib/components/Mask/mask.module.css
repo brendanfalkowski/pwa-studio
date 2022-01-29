@@ -1,4 +1,6 @@
 .root {
+    composes: appearance-none from global;
+    composes: bg-black from global;
     composes: block from global;
     composes: cursor-pointer from global;
     composes: fixed from global;
@@ -9,11 +11,9 @@
     composes: top-0 from global;
     composes: w-full from global;
     composes: z-loadingCover from global;
-    background-color: black;
     transition-duration: 192ms;
     transition-property: opacity, visibility;
     transition-timing-function: linear;
-    -webkit-appearance: none;
 }
 
 .root_active {

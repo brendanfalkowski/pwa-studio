@@ -6,9 +6,9 @@
 }
 
 .step {
-    background-color: rgb(var(--venia-global-color-gray-dark));
+    composes: bg-gray-300 from global;
 }
 
 .step_completed {
-    background-color: rgb(var(--venia-brand-color-1-700));
+    composes: bg-brand-dark from global;
 }

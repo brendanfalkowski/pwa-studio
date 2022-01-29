@@ -11,16 +11,16 @@
 
     composes: justify-start from global;
     composes: no-underline from global;
-    color: rgb(var(--venia-global-color-gray-700));
-}
+    composes: text-subtle from global;
 
-.link:hover {
-    color: rgb(var(--venia-global-color-gray-600));
+    composes: hover_text-colorDefault from global;
 }
 
 .signOut {
     composes: link;
 
+    composes: border-t-2 from global;
+    composes: border-solid from global;
+    composes: border-light from global;
     composes: pt-xs from global;
-    border-top: 2px solid rgb(var(--venia-global-color-gray));
 }

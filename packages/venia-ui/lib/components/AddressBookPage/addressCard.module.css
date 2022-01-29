@@ -1,10 +1,12 @@
 .root {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: content-start from global;
     composes: grid from global;
     composes: p-xs from global;
     composes: relative from global;
     composes: rounded-md from global;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
     grid-template-columns: 1fr max-content;
 
     composes: sm_px-md from global;
@@ -19,6 +21,7 @@
 
 .confirmDeleteContainer {
     composes: absolute from global;
+    composes: bg-white from global;
     composes: gap-md from global;
     composes: grid from global;
     composes: grid-cols-1 from global;
@@ -29,7 +32,6 @@
     composes: p-xs from global;
     composes: top-0 from global;
     composes: w-full from global;
-    background-color: rgba(255, 255, 255, 0.9);
 
     composes: sm_px-md from global;
     composes: sm_py-5 from global;
@@ -44,16 +46,15 @@
 .confirmDeleteButton {
     composes: root_normalPriorityNegative from '../Button/button.module.css';
 
+    composes: bg-white from global;
     composes: order-first from global;
-
-    background-color: white;
     composes: sm_order-1 from global;
 }
 
 .cancelDeleteButton {
     composes: root_lowPriority from '../Button/button.module.css';
 
-    background-color: white;
+    composes: bg-white from global;
 }
 
 .contentContainer {
@@ -69,14 +70,16 @@
 }
 
 .defaultBadge {
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: font-semibold from global;
     composes: mb-2xs from global;
     composes: px-sm from global;
     composes: py-1.5 from global;
     composes: rounded-md from global;
+    composes: text-xs from global;
     composes: w-max from global;
-    border: 1px solid rgb(var(--venia-global-color-gray-400));
-    font-size: 0.75rem;
 }
 
 .name {

@@ -14,7 +14,7 @@
 
 .icon {
     composes: inline from global;
-    stroke: #fff;
+    composes: stroke-white from global;
 
     composes: xs_hidden from global;
 }

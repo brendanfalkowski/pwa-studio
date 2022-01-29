@@ -1,11 +1,13 @@
 .root {
-    border-bottom: 2px solid rgb(var(--venia-global-color-gray-400));
+    composes: border-b-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
 }
 
 /* TODO @TW: cannot compose */
 .root:last-of-type {
-    border-bottom-width: 0;
     /* composes: border-b-0 from global; */
+    border-bottom-width: 0;
 }
 
 .contents_container {
@@ -25,7 +27,7 @@
 }
 
 .title {
-    font-size: var(--venia-global-fontSize-300);
+    composes: text-lg from global;
 }
 
 .title_container {

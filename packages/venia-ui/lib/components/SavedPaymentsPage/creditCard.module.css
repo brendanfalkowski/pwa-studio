@@ -1,4 +1,7 @@
 .root {
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: gap-x-xs from global;
     composes: grid from global;
     composes: grid-cols-autoLast from global;
@@ -7,14 +10,13 @@
     composes: py-sm from global;
     composes: rounded-md from global;
     composes: relative from global;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
     min-height: 10rem;
 }
 
 .root_active {
     composes: root;
 
-    border-color: rgb(var(--venia-brand-color-1-600));
+    composes: border-brand-dark from global;
 }
 
 .title {
@@ -46,6 +48,7 @@
 
 .deleteConfirmationContainer {
     composes: absolute from global;
+    composes: bg-white from global;
     composes: gap-md from global;
     composes: grid from global;
     composes: h-full from global;
@@ -59,7 +62,6 @@
     composes: top-0 from global;
     composes: visible from global;
     composes: w-full from global;
-    background-color: rgba(255, 255, 255, 0.9);
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     transform: scaleX(1);
     transition-duration: 192ms;
@@ -69,26 +71,26 @@
 
 .deleteConfirmationContainer_hidden {
     composes: deleteConfirmationContainer;
+
+    composes: invisible from global;;
     composes: opacity-0 from global;
     transform: scaleX(0);
     transition-delay: 0s, 192ms, 0s;
     transition-timing-function: var(--venia-global-anim-out);
-    composes: invisible from global;;
 }
 
 .confirmDeleteButton {
     composes: root_normalPriorityNegative from '../Button/button.module.css';
 
-    composes: order-first from global;
-    background-color: white;
-
+    composes: bg-white from global;
     composes: order-1 from global;
+    composes: order-first from global;
 }
 
 .cancelDeleteButton {
     composes: root_lowPriority from '../Button/button.module.css';
 
-    background-color: white;
+    composes: bg-white from global;
 }
 
 .deleteText {

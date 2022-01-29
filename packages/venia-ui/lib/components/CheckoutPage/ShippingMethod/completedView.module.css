@@ -11,9 +11,9 @@
 }
 
 .editButton {
-    color: rgb(var(--venia-brand-color-1-700));
     composes: p-xs from global;
     composes: -m-xs from global;
+    composes: text-brand-dark from global;
 }
 
 .editButtonText {
@@ -23,13 +23,13 @@
 }
 
 .editIcon {
-    stroke: rgb(var(--venia-brand-color-1-700));
+    composes: stroke-brand-base from global;
 }
 
 .error {
     composes: leading-normal from global;
     composes: self-center from global;
-    color: rgb(var(--venia-global-color-error));
+    composes: text-error from global;
 }
 
 .free {

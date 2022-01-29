@@ -1,7 +1,9 @@
 .items_review_container {
-    min-height: 2rem;
-    border: 2px solid rgb(var(--venia-global-color-gray-400));
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: rounded-md from global;
+    min-height: 2rem;
 }
 
 .items_container {

@@ -1,11 +1,11 @@
 .root {
-    background-color: white;
-    box-shadow: 0 -1px rgb(var(--venia-global-color-border));
+    composes: bg-white from global;
     composes: gap-3 from global;
     composes: grid from global;
     composes: grid-flow-col from global;
     composes: h-[4rem] from global;
     composes: items-stretch from global;
+    box-shadow: 0 -1px rgb(var(--venia-global-color-border));
 }
 
 .contents {
