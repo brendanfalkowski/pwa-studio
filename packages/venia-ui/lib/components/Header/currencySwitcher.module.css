@@ -110,8 +110,8 @@
 
     /* TODO @TW: cannot compose */
     .root:last-child .menu {
-        left: auto;
         right: 1rem;
+        left: auto;
     }
 
     .menu_open {

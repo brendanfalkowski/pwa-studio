@@ -7,7 +7,7 @@
 .content {
     composes: gap-3 from global;
     composes: grid from global;
-    composes: grid-cols-1 from global;
+    composes: grid-cols-[1fr] from global;
     composes: grid-flow-col from global;
     composes: items-center from global;
     composes: px-xs from global;
