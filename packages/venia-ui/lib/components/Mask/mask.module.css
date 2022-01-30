@@ -5,7 +5,6 @@
     composes: cursor-pointer from global;
     composes: fixed from global;
     composes: h-full from global;
-    composes: invisible from global;;
     composes: left-0 from global;
     composes: opacity-0 from global;
     composes: top-0 from global;
@@ -14,12 +13,19 @@
     transition-duration: 192ms;
     transition-property: opacity, visibility;
     transition-timing-function: linear;
+
+    /* TODO @TW: review (B6) */
+    /* composes: invisible from global; */
+    visibility: hidden;
 }
 
 .root_active {
     composes: root;
 
     composes: opacity-50 from global;
-    composes: visible from global;
     transition-duration: 224ms;
+
+    /* TODO @TW: review (B6) */
+    /* composes: visible from global; */
+    visibility: visible;
 }
