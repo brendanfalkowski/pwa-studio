@@ -13,11 +13,9 @@
     composes: border-solid from global;
     composes: border-subtle from global;
     composes: pb-xs from global;
-}
+    composes: pt-xs from global;
 
-/* TODO @TW: cannot compose */
-.payment_method:not(:first-child) {
-    padding-top: 1rem;
+    composes: last_pt-0 from global;
 }
 
 /* TODO @TW: cannot compose */
