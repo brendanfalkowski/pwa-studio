@@ -28,7 +28,6 @@
     composes: border-solid from global;
     composes: border-subtle from global;
     composes: bottom-md from global;
-    composes: invisible from global;
     composes: left-xs from global;
     composes: max-w-[90vw] from global;
     composes: opacity-0 from global;
@@ -45,6 +44,10 @@
     transition-timing-function: var(--venia-global-anim-out);
     transition-property: opacity, transform, visibility;
 
+    /* TODO @TW: review (B6) */
+    /* composes: invisible from global; */
+    visibility: hidden;
+
     composes: sm_bottom-auto from global;
     composes: sm_left-auto from global;
     composes: sm_right-xs from global;
@@ -55,10 +58,13 @@
     composes: menu;
 
     composes: opacity-100 from global;
-    composes: visible from global;
     transform: translate3d(0, 4px, 0);
     transition-duration: 224ms;
     transition-timing-function: var(--venia-global-anim-in);
+
+    /* TODO @TW: review (B6) */
+    /* composes: visible from global; */
+    visibility: visible;
 }
 
 .menuItem {
