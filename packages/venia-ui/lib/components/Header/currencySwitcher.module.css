@@ -71,15 +71,13 @@
 }
 
 .menuItem {
-    composes: hover_bg-subtle from global;
-}
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
 
-/* TODO @TW: cannot compose */
-.menuItem:not(:last-child) {
-    /* composes: border-b-1 from global; */
-    /* composes: border-solid from global; */
-    /* composes: border-subtle from global; */
-    border-bottom: 1px solid rgb(var(--venia-global-color-gray-dark));
+    composes: hover_bg-subtle from global;
+
+    composes: last_border-none from global;
 }
 
 .symbol {

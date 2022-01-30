@@ -77,16 +77,13 @@
 }
 
 .groupList {
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
     composes: pb-2xs from global;
     composes: pt-2xs from global;
-}
 
-/* TODO @TW: cannot compose */
-.groupList:not(:last-child) {
-    /* composes: border-b-1 from global; */
-    /* composes: border-solid from global; */
-    /* composes: border-subtle from global; */
-    border-bottom: 1px solid rgb(var(--venia-global-color-gray-dark));
+    composes: last_border-none from global;
 }
 
 /*
