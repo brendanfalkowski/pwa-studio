@@ -19,7 +19,6 @@
     composes: rounded from global;
     composes: shadow-menu from global;
     composes: text-colorDefault from global;
-    composes: text-colorDefault from global;
     composes: text-left from global;
     composes: top-[110%] from global;
     composes: z-menu from global;
@@ -36,6 +35,7 @@
 }
 
 .sortButton {
+    /* TODO @TW: review. This is fragile to extend. */
     composes: root_lowPriority from '../../components/Button/button.module.css';
 
     composes: min-w-[6.26rem] from global;
