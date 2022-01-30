@@ -31,7 +31,7 @@
 }
 
 .body {
-    composes: border-b-1 from global;
+    composes: border-b from global;
     composes: border-solid from global;
     composes: border-subtle from global;
     composes: overflow-auto from global;

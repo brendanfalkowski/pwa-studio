@@ -37,7 +37,7 @@
 }
 
 .optionTitle {
-    composes: border-t-1 from global;
+    composes: border-t from global;
     composes: border-solid from global;
     composes: border-subtle from global;
     composes: font-semibold from global;
