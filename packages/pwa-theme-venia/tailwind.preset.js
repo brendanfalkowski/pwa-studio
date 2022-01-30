@@ -174,10 +174,10 @@ const extend = {
         buttonHover: '21',
         buttonFocus: '22',
         dropdown: '50',
-        menu: '60',
-        dialog: '70',
-        toast: '80',
-        loadingCover: '100'
+        mask: '60',
+        menu: '70',
+        dialog: '80',
+        toast: '90',
     }
 };
 

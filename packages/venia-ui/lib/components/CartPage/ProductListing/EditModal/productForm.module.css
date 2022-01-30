@@ -37,7 +37,7 @@
     composes: left-0 from global;
     composes: text-center from global;
     composes: top-2/4 from global;
-    composes: z-loadingCover from global;
+    composes: z-mask from global;
     transform: translateY(-50%);
 }
 

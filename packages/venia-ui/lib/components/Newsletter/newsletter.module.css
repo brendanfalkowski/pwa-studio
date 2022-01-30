@@ -89,5 +89,5 @@
     composes: opacity-75 from global;
     composes: top-0 from global;
     composes: w-full from global;
-    composes: z-loadingCover from global;
+    composes: z-mask from global;
 }

@@ -67,5 +67,5 @@
     composes: opacity-50 from global;
     composes: right-[-24px] from global;
     composes: top-[-7px] from global;
-    composes: z-loadingCover from global;
+    composes: z-mask from global;
 }
