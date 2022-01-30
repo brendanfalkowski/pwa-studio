@@ -26,13 +26,11 @@
 }
 
 .triggerContainer {
-    composes: grid from global;
     composes: hidden from global;
     composes: items-center from global;
-    /* The full height of the site header minus (box shadow height * 2). */
-    height: calc(5rem - 8px); /* TODO @TW: review */
+    composes: h-lg from global;
 
-    composes: lg_block from global;
+    composes: lg_grid from global;
 }
 
 .triggerContainer_open {
