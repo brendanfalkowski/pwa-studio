@@ -1,4 +1,5 @@
 .root {
+    /* TODO @TW: review (B6) */
     composes: border-2 from global;
     composes: border-solid from global;
     composes: border-subtle from global;
@@ -9,6 +10,8 @@
 .root_editMode {
     composes: root;
 
+    /* TODO @TW: review (B6) */
+    composes: border-0 from global;
     composes: border-b-2 from global;
     composes: border-solid from global;
     composes: border-subtle from global;

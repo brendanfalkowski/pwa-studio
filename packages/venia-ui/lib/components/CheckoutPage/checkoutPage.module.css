@@ -3,9 +3,9 @@
     composes: mx-auto from global;
     composes: my-0 from global;
     composes: px-sm from global;
+    composes: py-md from global;
 
     composes: lg_px-lg from global;
-    composes: lg_py-md from global;
 }
 
 .checkoutContent {
@@ -19,6 +19,7 @@
 
 .checkoutContent_hidden {
     composes: checkoutContent;
+
     composes: hidden from global;
 }
 
@@ -76,7 +77,7 @@
     composes: row-start-1 from global;
 
     composes: lg_grid-flow-col from global;
-    composes: lg_justify-items-left from global;
+    composes: lg_justify-items-start from global;
     composes: lg_mb-0 from global;
 }
 
