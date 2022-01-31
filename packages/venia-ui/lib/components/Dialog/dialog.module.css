@@ -5,7 +5,7 @@
 .root {
     composes: fixed from global;
     composes: h-full from global;
-    composes: left-auto from global;
+    composes: left-[-100vw] from global;
     composes: opacity-0 from global;
     composes: right-0 from global;
     composes: top-0 from global;
@@ -19,15 +19,16 @@
     /* composes: invisible from global; */
     visibility: hidden;
 
-    composes: lg_left-[-100vw] from global;
     composes: lg_right-auto from global;
 }
 
 .root_open {
     composes: root;
 
-    composes: left-1/2 from global;
+    composes: left-auto from global;
     composes: opacity-100 from global;
+
+    composes: lg_left-1/2 from global;
 
     /* TODO @TW: review (B6) */
     /* composes: visible from global; */
