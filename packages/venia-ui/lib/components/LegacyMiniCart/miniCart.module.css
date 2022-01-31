@@ -7,7 +7,6 @@
     composes: fixed from global;
     composes: grid from global;
     composes: h-full from global;
-    composes: invisible from global;
     composes: opacity-0 from global;
     composes: overflow-hidden from global;
     composes: max-w-modal from global;
@@ -21,6 +20,10 @@
     transition-duration: 192ms;
     transition-property: opacity, transform, visibility;
     transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+
+    /* TODO @TW: review (B6) */
+    /* composes: invisible from global; */
+    visibility: hidden;
 }
 
 /* state: open */
@@ -29,8 +32,11 @@
     composes: root;
 
     composes: opacity-100 from global;
-    composes: visible from global;
     transform: translate3d(0, 0, 0);
     transition-duration: 224ms;
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+    /* TODO @TW: review (B6) */
+    /* composes: visible from global; */
+    visibility: visible;
 }
