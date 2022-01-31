@@ -5,7 +5,7 @@
      * Each grid item gets at least 125px.
      * Wrap the grid items.
      */
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    composes: grid-cols-radioGroupRoot from global;
 }
 
 .radioContainer {

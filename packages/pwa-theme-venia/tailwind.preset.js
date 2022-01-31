@@ -106,7 +106,8 @@ const extend = {
         auto: 'auto',
         autoFirst: 'auto 1fr',
         autoLast: '1fr auto',
-        carouselThumbnailList: 'repeat(auto-fit, 1rem)'
+        carouselThumbnailList: 'repeat(auto-fit, 1rem)',
+        radioGroupRoot: 'repeat(auto-fit, minmax(125px, 1fr))',
     },
     gridTemplateRows: {
         auto: 'auto',

@@ -35,7 +35,7 @@
 }
 
 .sortButton {
-    /* TODO @TW: review. This is fragile to extend. */
+    /* TODO @TW: review (C2). This is fragile to extend. */
     composes: root_lowPriority from '../../components/Button/button.module.css';
 
     composes: min-w-[6.26rem] from global;
