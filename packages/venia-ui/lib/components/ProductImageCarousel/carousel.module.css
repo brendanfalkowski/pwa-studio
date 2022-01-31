@@ -83,15 +83,15 @@
     composes: content-stretch from global;
     composes: gap-xs from global;
     composes: grid from global;
+    composes: grid-cols-carouselThumbnailList from global;
     composes: grid-flow-col from global;
     composes: justify-center from global;
     composes: mt-xs from global;
-    grid-template-columns: repeat(auto-fit, 1rem); /* TODO @TW: review */
     composes: z-foreground from global;
 
     composes: lg_content-start from global;
     composes: lg_gap-sm from global;
-    composes: lg_grid-cols-1 from global;
+    composes: lg_grid-cols-[1fr] from global;
     composes: lg_grid-flow-row from global;
     composes: lg_mt-0 from global;
 }

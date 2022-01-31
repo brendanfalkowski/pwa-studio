@@ -105,7 +105,8 @@ const extend = {
     gridTemplateColumns: {
         auto: 'auto',
         autoFirst: 'auto 1fr',
-        autoLast: '1fr auto'
+        autoLast: '1fr auto',
+        carouselThumbnailList: 'repeat(auto-fit, 1rem)'
     },
     gridTemplateRows: {
         auto: 'auto',
