@@ -5,7 +5,6 @@
     composes: grid from global;
     composes: grid-rows-autoFirst from global;
     composes: h-full from global;
-    composes: invisible from global;
     composes: left-auto from global;
     composes: max-w-modal from global;
     composes: opacity-0 from global;
@@ -18,6 +17,10 @@
     transition-duration: 192ms;
     transition-timing-function: var(--venia-global-anim-out);
     transition-property: opacity, transform, visibility;
+
+    /* TODO @TW: review (B6) */
+    /* composes: invisible from global; */
+    visibility: hidden;
 
     composes: lg_h-auto from global;
     composes: lg_max-h-modal from global;
@@ -45,10 +48,13 @@
 
     composes: opacity-100 from global;
     composes: shadow-modal from global;
-    composes: visible from global;
     transform: scale(1);
     transition-duration: 224ms;
     transition-timing-function: var(--venia-global-anim-in);
+
+    /* TODO @TW: review (B6) */
+    /* composes: visible from global; */
+    visibility: visible;
 }
 
 @media (max-width: 959px) {
