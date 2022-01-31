@@ -125,7 +125,8 @@
 
     composes: lg_h-minContent from global;
     composes: lg_sticky from global;
-    composes: lg_top-22 from global;
+    /* TODO @TW: review. Magic number. Slightly bigger than sticky header. */
+    composes: lg_top-[6rem] from global;
 }
 
 @media (min-width: 960px) {
