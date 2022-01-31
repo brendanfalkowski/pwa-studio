@@ -4,9 +4,8 @@
     composes: border-subtle from global;
     composes: grid from global;
     composes: gap-y-xs from global;
-    composes: px-0 from global;
-    composes: py-md from global;
-    composes: rounded-none from global;
+    composes: p-md from global;
+    composes: rounded-md from global;
 }
 
 .done {
@@ -15,8 +14,6 @@
     composes: border-2 from global;
     composes: border-solid from global;
     composes: border-subtle from global;
-    composes: p-md from global;
-    composes: rounded-md from global;
 }
 
 .editingHeading {
