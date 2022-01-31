@@ -155,8 +155,9 @@ const extend = {
         'sm': '1.5rem',
         'md': '2rem',
         'lg': '3rem',
-        'DEFAULT': '1.5rem',
-        'full': '100%'
+        DEFAULT: '1.5rem',
+        'filterSidebarWidth': '325px',
+        'full': '100%',
     },
     textColor: theme => ({
         colorDefault: theme('colors.gray.900'), // TODO @TW naming collision: TW puts "fontSize" + "color" under "text-" prefix
